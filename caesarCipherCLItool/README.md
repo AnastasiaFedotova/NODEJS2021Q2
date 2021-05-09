@@ -6,6 +6,8 @@ CLI tool accept 4 options (short alias and full name):
 4.  **-o, --output**: an output file
 
 ## Launch the application:
+### clone repository (required)
+### command cd caesarCipherCLItool (required)
 ### command npm install (required)
 ### create output and input text file
 ### command node src/app -s [integer] -i [path (input)] -o [path (output)] -a [encode/decode] (required)
