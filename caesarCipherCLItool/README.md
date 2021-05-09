@@ -10,4 +10,4 @@ CLI tool accept 4 options (short alias and full name):
 ### command cd caesarCipherCLItool (required)
 ### command npm install (required)
 ### create output and input text file
-### command node src/app -s [integer] -i [path (input)] -o [path (output)] -a [encode/decode] (required)
+### command node src/app.js -s [integer] -i [path (input file)] -o [path (output file)] -a [encode/decode] (required)
