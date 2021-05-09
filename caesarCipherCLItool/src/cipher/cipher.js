@@ -1,18 +1,10 @@
-const MIN_CASE_CHAR = 97;
-const MAX_CASE_CHAR = 122;
-const MIN_UPPER_CASE_CHAR = 65;
-const MAX_UPPER_CASE_CHAR = 90;
-const MAX_SHIFT = 26;
+const isValidChar = require('../check/char');
 
-function isValidChar(char) {
-  if ((char >= MIN_CASE_CHAR && char <= MAX_CASE_CHAR)
-    || (char >= MIN_UPPER_CASE_CHAR && char < MAX_UPPER_CASE_CHAR)) return true;
-  return false;
-}
+const MAX_SHIFT = 26;
 
 function getCipher(str, userShift) {
   let result = '';
-  let shift;
+  let shift = userShift;
   if (userShift > MAX_SHIFT || userShift < -MAX_SHIFT) shift = userShift % MAX_SHIFT;
 
   for (const val of str) {
