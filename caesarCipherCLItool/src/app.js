@@ -10,6 +10,7 @@ function checkFile(filePath) {
 
 if (options.input) checkFile(options.input);
 if (options.output) checkFile(options.output);
+if (options.action === 'decode') options.shift = -(options.shift);
 
 if (!options.input) {
   process.stdin.on('readable', () => {
